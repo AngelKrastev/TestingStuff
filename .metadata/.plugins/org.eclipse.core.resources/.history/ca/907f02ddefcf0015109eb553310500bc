@@ -1,0 +1,22 @@
+package project_1;
+import java.util.*;
+
+public class excercise_2 {
+
+	private static Scanner scanner;
+	
+	public static void main(String args[]) {
+		scanner = new Scanner ( System.in );
+		boolean b=true;
+		int number,min_number=0;
+		number = scanner.nextInt();
+		while(number>=0) {
+			if(b||number<min_number) {
+				min_number=number;
+				b=false;
+			}
+			number = scanner.nextInt();
+		}
+		System.out.print(min_number);
+	}
+}

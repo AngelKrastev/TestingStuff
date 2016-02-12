@@ -1,0 +1,9 @@
+package project_1;
+
+import java.util.Scanner;;
+
+public class excercise_1 {
+	Scanner scanner = new Scanner( System.in );
+	System.out.print("Hello.It's me.");
+
+}

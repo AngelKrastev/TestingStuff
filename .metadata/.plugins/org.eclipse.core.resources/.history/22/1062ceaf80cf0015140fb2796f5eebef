@@ -1,0 +1,13 @@
+package project_1;
+import java.util.*;
+public class excercise_2 {
+
+	Scanner scanncer = new Scanner( System.in );
+	
+	public static void main(String args[]) {
+		int number;
+		do {
+			number = scanner.nextInt();
+		}
+	}
+}

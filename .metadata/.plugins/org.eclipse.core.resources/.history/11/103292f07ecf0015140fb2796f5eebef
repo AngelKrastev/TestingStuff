@@ -1,0 +1,12 @@
+package project_1;
+import java.io.*;
+import java.util.*;
+
+public class excercise_1 {
+	public static void main(String args[]) { 
+	Scanner scanner = new Scanner( System.in );
+	System.out.print("Hello.It's me.");
+	int number = scanner.nextInt();
+	}
+
+}

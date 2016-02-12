@@ -1,0 +1,23 @@
+package project_1;
+import java.util.*;
+import java.lang.Math.*;
+
+public class excercise_7 {
+
+	private static Scanner scanner;
+	
+	public static void main(String args[]) {
+		
+		scanner = new Scanner( System.in );
+		int n = scanner.nextInt();
+		if(n>0) {
+			boolean prime=true;
+			int i=2;
+			while(i<sqrt(n)) {
+				if(n%i==0) prime=false;
+			}
+			if(prime) System.out.println(n + " is a prime.");
+			else System.out.println(n + " is not a prime.");
+		}
+	}
+}

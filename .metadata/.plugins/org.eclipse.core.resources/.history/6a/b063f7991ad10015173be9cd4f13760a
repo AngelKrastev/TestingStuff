@@ -1,0 +1,55 @@
+package project_2;
+import java.util.*;
+
+public class excercise_5 {
+
+	public static void main(String[] args)
+	{
+		Scanner in = new Scanner(System.in);
+		ArrayList<String> list = new ArrayList<String>();   
+		System.out.println("Enter a string (enter stop to finish)"); 
+		String s = in.nextLine();
+		while(!s.equals("stop")) 
+		{
+			list.add(s);
+			System.out.println("Enter a string (enter stop to finish)");
+			s = in.nextLine();
+		}
+		ArrayList<String> newlist = new ArrayList<String>();
+		int occurance[] = new int[newlist.size()];
+		for(int i=0;i<list.size();i++)
+			if(!newlist.contains(list.get(i))) newlist.add(list.get(i));
+		for(int i=0;i<newlist.size();i++)
+		{
+			occurance[i]=0;
+			for(int j=0;j<list.size();j++)
+				if(newlist.get(i).equals(list.get(j))) occurance[i]++;
+		}
+		int mostoccures=0;
+		for(int i=0;i<occurance.length;i++)
+			if(occurance[i]>mostoccures) mostoccures=occurance[i];
+		for(int i=0;i<newlist.length();i++)
+			if(occurance[i]==mostoccures) System.out.println(newlist.get(i));
+		/*
+		int position=0,mostoccures=0;
+		for(int i=0;i<list.size();i++)
+		{
+			int occures=1;
+			for(int j=i+1;j<list.size();j++)
+				if(list.get(i).equals(list.get(j)))
+				{
+					occures++;
+					list.remove(j);
+					j--;
+				}
+			System.out.println(list.get(i) + " appeared " + occures + " times.");
+			if(occures>mostoccures)
+				{
+				mostoccures=occures;
+				position=i;
+				}
+		}
+		System.out.println(list.get(position));
+		*/		
+	}
+}

@@ -1,0 +1,15 @@
+package project_1;
+import java.util.*;
+
+public class excercise_4 {
+
+	private static Scanner scanner;
+	
+	public static void main(String args[]) {
+		
+		scanner = new Scanner( System.in );
+		System.out.print("Enter a string:");
+		String s = scanner.next();
+		
+	}
+}

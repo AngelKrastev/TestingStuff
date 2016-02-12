@@ -1,0 +1,39 @@
+package project_2;
+import java.util.*;
+
+public class excercise_5 {
+
+	public static void main(String[] args)
+	{
+		Scanner in = new Scanner(System.in);
+		ArrayList<String> list = new ArrayList<String>();   
+		System.out.println("Enter a string (enter stop to finish)"); 
+		String s = in.nextLine();
+		while(!s.equals("stop")) 
+		{
+			list.add(s);
+			System.out.println("Enter a string (enter stop to finish)");
+			s = in.nextLine();
+		}
+		int position=0,mostoccures=0;
+		for(int i=0;i<list.size()-1;i++)
+		{
+			int occures=1;
+			for(int j=i+1;j<list.size();j++)
+				if(list.get(i).equals(list.get(j)))
+				{
+					occures++;
+					list.remove(j);
+				}
+			
+			if(occures>mostoccures)
+				{
+				mostoccures=occures;
+				position=i;
+				}
+		}
+		System.out.println(list.get(position));
+		//for(int i=0;i<newlist.size();i++) System.out.println(newlist.get(i));
+		
+	}
+}

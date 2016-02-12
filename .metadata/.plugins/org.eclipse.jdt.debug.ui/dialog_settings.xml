@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.jdt.debug.ui.MAIN_METHOD_SELECTION_DIALOG">
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode&gt;=project_1/src&amp;lt;project_1{excercise_1.java[excercise_1&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=project_1/src&amp;lt;project_1{excercise_2.java[excercise_2&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=project_1/src&amp;lt;project_1{excercise_3.java[excercise_3&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=project_1/src&amp;lt;project_1{excercise_4.java[excercise_4&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=project_1/src&amp;lt;project_1{excercise_5.java[excercise_5&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=project_1/src&amp;lt;project_1{excercise_6.java[excercise_6&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=project_1/src&amp;lt;project_1{excercise_7.java[excercise_7&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=project_1/src&amp;lt;project_1{excercise_8.java[excercise_8&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=project_2/src&amp;lt;project_2{excercise_5.java[excercise_5&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=project_2/src&amp;lt;project_2{excercise_4.java[excercise_4&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=project_2/src&amp;lt;project_2{excercise_3.java[excercise_3&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=project_2/src&amp;lt;project_2{excercise_2.java[excercise_2&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=project_2/src&amp;lt;project_2{excercise_1.java[excercise_1&lt;/infoNode&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;" key="History"/>
+		<section name="DialogBoundsSettings">
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="-1" key="DIALOG_Y_ORIGIN"/>
+			<item value="584" key="DIALOG_HEIGHT"/>
+			<item value="180" key="DIALOG_X_ORIGIN"/>
+			<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		</section>
+	</section>
+</section>

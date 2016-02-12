@@ -1,0 +1,35 @@
+package project_2;
+import java.util.*;
+
+public class excercise_5 {
+
+	public static void main(String[] args)
+	{
+		Scanner in = new Scanner(System.in);
+		ArrayList<String> list = new ArrayList<String>();   
+		System.out.println("Enter a string (enter stop to finish)"); 
+		String s = in.nextLine();
+		while(!s.equals("stop")) 
+		{
+			list.add(s);
+			System.out.println("Enter a string (enter stop to finish)");
+			s = in.nextLine();
+		}
+		ArrayList<String> newlist = new ArrayList<String>();
+		for(int i=0;i<list.size();i++)
+			if(!newlist.contains(list.get(i))) newlist.add(list.get(i));
+		int occurance[] = new int[newlist.size()];
+		for(int i=0;i<newlist.size();i++)
+		{
+			occurance[i]=0;
+			for(int j=0;j<list.size();j++)
+				if(newlist.get(i).equals(list.get(j))) occurance[i]++;
+		}
+		int mostoccures=0;
+		for(int i=0;i<occurance.length;i++)
+			if(occurance[i]>mostoccures) mostoccures=occurance[i];
+		System.out.println("The most frequent words are:");
+		for(int i=0;i<newlist.size();i++)
+			if(occurance[i]==mostoccures) System.out.println(newlist.get(i));
+	}
+}

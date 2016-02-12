@@ -1,0 +1,16 @@
+package project_1;
+import java.util.*;
+
+public class excercise_4 {
+
+	private static Scanner scanner;
+	
+	public static void main(String args[]) {
+		
+		scanner = new Scanner( System.in );
+		System.out.println("Enter a string:");
+		String s = "mqu",s_reversed="";
+		for(int i=s.length();i>=0;i--) s_reversed += s.charAt(i);
+		System.out.print(s_reversed);
+	}
+}

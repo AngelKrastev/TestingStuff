@@ -1,0 +1,19 @@
+package project_1;
+import java.util.*;
+
+public class excercise_2 {
+
+	private static Scanner scanner;
+	
+	public static void main(String args[]) {
+		scanner = new Scanner ( System.in );
+		int number,min_number;
+		number = scanner.nextInt();
+		min_number = number;
+		while(number>=0) {
+			number = scanner.nextInt();
+			if(number<min_number) min_number=number;
+		}
+		if(min_number>=0) System.out.print(min_number);
+	}
+}
