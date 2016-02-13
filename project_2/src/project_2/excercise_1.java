@@ -15,11 +15,18 @@ public class excercise_1 {
 			System.out.println("Enter a string (enter stop to finish)");
 			s = in.nextLine();
 		}
+		ArrayList<String> newlist = new ArrayList<>();
 		int longest=0;
-		for(int i=0;i<list.size();i++) 
-			if(list.get(i).length()>longest) longest=list.get(i).length();
+		for (String string : list) {
+			if(longest<string.length())
+			{
+				newlist.clear();
+				longest=string.length();
+			}
+			if(longest==string.length()&&!newlist.contains(string)) newlist.add(string);
+		}
 		System.out.println("The longest words are:");
-		for(int i=0;i<list.size();i++)
-			if(list.get(i).length()==longest) System.out.println(list.get(i));
+		for (String string : newlist) 
+			System.out.println(string);
 	}
 }

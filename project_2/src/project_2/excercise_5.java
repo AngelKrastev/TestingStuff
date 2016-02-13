@@ -15,23 +15,25 @@ public class excercise_5 {
 			System.out.println("Enter a string (enter stop to finish)");
 			s = in.nextLine();
 		}
-		//нов лист с всички уникални думи
-		ArrayList<String> newlist = new ArrayList<String>();
-		for(int i=0;i<list.size();i++)
-			if(!newlist.contains(list.get(i))) newlist.add(list.get(i));
-		//масив с числа за това колко пъти се появява всяка уникална дума в оригиналния лист
-		int occurance[] = new int[newlist.size()];
-		for(int i=0;i<newlist.size();i++)
+		ArrayList<String> newlist = new ArrayList<>();
+		Map<String, Integer> map = new HashMap<>();
+		for (int i = 0; i < list.size(); i++)
 		{
-			occurance[i]=0;
-			for(int j=0;j<list.size();j++)
-				if(newlist.get(i).equals(list.get(j))) occurance[i]++;
+			if(!map.containsKey(list.get(i))) map.put(list.get(i), 1);
+			else map.put(list.get(i), map.get(list.get(i))+1);
 		}
-		int mostoccures=0;
-		for(int i=0;i<occurance.length;i++)
-			if(occurance[i]>mostoccures) mostoccures=occurance[i];
+		int occ=0;
+		for (String string : list) 
+		{
+			if(map.get(string)>occ)
+				{
+				newlist.clear();
+				occ=map.get(string);
+				}
+			if(map.get(string)==occ&&!newlist.contains(string)) newlist.add(string);
+		}
 		System.out.println("The most frequent words are:");
-		for(int i=0;i<newlist.size();i++)
-			if(occurance[i]==mostoccures) System.out.println(newlist.get(i));
+		for (String string : newlist)
+			System.out.println(string);
 	}
 }
