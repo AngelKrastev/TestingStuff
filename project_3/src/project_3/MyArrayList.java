@@ -11,15 +11,10 @@ public class MyArrayList {
 		}
 	}
 	
-	public MyArrayList(String[] string) {
+	public MyArrayList() {
 		this.size = 10;
 		this.stored = 0;
 		this.string = new String[size];
-		if(this.size<string.length) System.out.println("Array too long.Constructor failed.");
-		else {
-			copy(this.string,string);
-			this.stored = string.length;
-		}
 	}
 	
 	public void add(String string) {
@@ -27,8 +22,7 @@ public class MyArrayList {
 			size+=10;
 			String[] s = new String[size];
 			copy(s,this.string);
-			this.string = new String[size];
-			copy(this.string,s);
+			this.string = s;
 		}
 		this.string[stored] = string;
 		stored++;
