@@ -11,17 +11,22 @@ public class Test
 		net.add(t2);
 		net.add(t3);
 
+		Network network = new Network();
 		double x1 = 5.0;
 		double y1 = 2.0;
-		
+		Transmitter t4 = new Transmitter(x1, y1, 80);
+		network.add(t4);
 		double x2 = 3.5;
 		double y2 = 18.0;
+		Transmitter t5 = new Transmitter(x2, y2, 80);
+		network.add(t5);
 		
 		SignalStrength grid = new SignalStrength(net, 20);
 		System.out.println(String.format("%.2f", grid.averageSignal()));
-		SignalMap sm = new SignalMap(20, 0.5, net);
+		SignalMap sm = new SignalMap(20, 10, net);
 		sm.display();
-
-	
+		System.out.println("Most important "+sm.important().toString());
+		sm.compare(network);
+		
 	}
 }
